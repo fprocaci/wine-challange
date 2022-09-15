@@ -1,18 +1,74 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 92%;
   margin: 0 auto;
   padding-top: 24px;
-
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-  column-gap: 2rem;
+  padding-bottom: 44px;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: 550px) {
-    grid-template-columns: auto auto auto;
+  }
+
+  @media (min-width: 1120px) {
+  }
+`;
+
+export const ContainerCenter = styled.div`
+  @media (min-width: 1120px) {
+    width: 66%;
+    display: flex;
     justify-content: center;
+    gap: 32px;
+  }
+`;
+
+export const Filtro = styled.div`
+  @media (min-width: 1120px) {
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #000000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+
+    input {
+      width: 19.86px;
+      height: 20px;
+    }
+
+    .inputFiltro {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 32px;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 16px;
+    }
+
+    .listFiltro {
+      display: flex;
+      align-items: center;
+      gap: 12.15px;
+    }
+  }
+`;
+
+export const ProductsContainer = styled.div`
+  @media (min-width: 1120px) {
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
   }
 `;
 
@@ -128,6 +184,8 @@ export const Button = styled.button`
   background-color: #7ebc43;
 
   border-radius: 4px;
+  border: none;
+  box-shadow: 0px 0.973384px 1.94677px rgba(0, 0, 0, 0.2);
 `;
 
 export const ButtonList = styled.button`
@@ -145,6 +203,10 @@ export const ButtonList = styled.button`
 
   @media (min-width: 550px) {
     grid-column: 1 / 4;
+  }
+
+  @media (min-width: 1120px) {
+    display: none;
   }
 `;
 
@@ -166,5 +228,39 @@ export const ShowList = styled.div`
     color: #888888;
     font-weight: 400;
     font-size: 18px;
+  }
+
+  @media (min-width: 1120px) {
+    display: none;
+  }
+`;
+
+export const Pagination = styled.div`
+  @media (min-width: 1120px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 26.64px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+
+    button {
+      border: 1px solid #b6116e;
+      padding: 10px 14px;
+      border-radius: 3px;
+      &:active {
+        background-color: #b6116e;
+      }
+    }
+
+    span {
+      color: #b6116e;
+    }
+
+    a {
+      color: #b6116e;
+    }
   }
 `;

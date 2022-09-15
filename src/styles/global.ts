@@ -19,7 +19,7 @@ export default createGlobalStyle`
     max-width: 100%;
   }
 
-  ul{
+  ul,ol{
     list-style: none;
   }
 

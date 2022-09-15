@@ -19,7 +19,6 @@ export default function Home() {
     <HomeContainer>
       <Header />
       <main className="container">
-        <ResultsReturn vinhos={vinhos} />
         <HomeMain vinhos={vinhos} />
       </main>
     </HomeContainer>

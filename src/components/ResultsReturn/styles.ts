@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ResultContainer = styled.div`
-  width: 92%;
   display: flex;
   margin: 0 auto;
   padding-top: 32px;
@@ -18,5 +17,10 @@ export const ResultContainer = styled.div`
     color: #888888;
     font-weight: 400;
     font-size: 18px;
+  }
+
+  @media (min-width: 1120px) {
+    padding-top: 5px;
+    border-bottom: none;
   }
 `;
