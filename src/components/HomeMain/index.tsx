@@ -17,7 +17,7 @@ function HomeMain(props) {
             <CardContainer>
               <img src={picture} alt="" />
               <h1>{vinho.name}</h1>
-              <div className="tWineContainer">
+              <div className=" ">
                 <p>
                   R$ {vinho.price}
                   <span className="off">15% OFF</span>

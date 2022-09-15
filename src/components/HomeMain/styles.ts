@@ -8,15 +8,25 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
+  column-gap: 2rem;
 
-  @media (min-width: 500px) {
+  @media (min-width: 550px) {
     grid-template-columns: auto auto auto;
+    justify-content: center;
   }
 `;
 
 export const Card = styled.div`
   max-width: 9.5rem;
   margin-bottom: 24px;
+
+  @media (min-width: 550px) {
+    max-width: 12rem;
+  }
+
+  @media (min-width: 1120px) {
+    max-width: 256px;
+  }
 `;
 
 export const CardContainer = styled.div`
@@ -104,6 +114,10 @@ export const CardContainer = styled.div`
   .nsWine {
     font-size: 10px;
     text-transform: uppercase;
+  }
+
+  @media (min-width: 1120px) {
+    padding-bottom: 21.49px;
   }
 `;
 
