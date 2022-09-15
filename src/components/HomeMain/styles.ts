@@ -8,14 +8,19 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
+
+  @media (min-width: 500px) {
+    grid-template-columns: auto auto auto;
+  }
 `;
 
 export const Card = styled.div`
-  width: 9.5rem;
+  max-width: 9.5rem;
   margin-bottom: 24px;
 `;
 
 export const CardContainer = styled.div`
+  position: relative;
   width: 100%;
   height: 348px;
   background: #ffffff;
@@ -26,7 +31,9 @@ export const CardContainer = styled.div`
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
   border-radius: 4px;
   margin-bottom: 8px;
-  position: relative;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
 
   img {
     position: absolute;
@@ -52,6 +59,10 @@ export const CardContainer = styled.div`
   span {
   }
 
+  .tWineContainer {
+    margin-top: 12px;
+  }
+
   .off {
     width: 66px;
     height: 16px;
@@ -61,11 +72,37 @@ export const CardContainer = styled.div`
     font-size: 12px;
     font-weight: 400;
     border-radius: 2px;
+    margin-left: 3.5px;
+  }
+
+  .sWineContainer {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+
+  .sWineText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .sWine {
+    width: 32px;
     display: flex;
-    flex-wrap: wrap;
+    text-align: right;
+    text-transform: uppercase;
+    margin-right: 8px;
+  }
+
+  .socioValor {
+    color: #c81a78;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .nsWine {
+    font-size: 10px;
     text-transform: uppercase;
   }
 `;
@@ -75,7 +112,7 @@ export const Button = styled.button`
   height: 40px;
   color: #ffffff;
   background-color: #7ebc43;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+
   border-radius: 4px;
 `;
 
@@ -90,6 +127,10 @@ export const ButtonList = styled.button`
   &:hover {
     color: #ffffff;
     background-color: #c81a78;
+  }
+
+  @media (min-width: 550px) {
+    grid-column: 1 / 4;
   }
 `;
 
