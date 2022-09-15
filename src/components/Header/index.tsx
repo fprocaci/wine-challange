@@ -13,10 +13,6 @@ function Header() {
           <Button />
           <Logo />
         </ButtonLogo>
-        <IconCart>
-          <Icon />
-          <Cart />
-        </IconCart>
         <ul>
           <NavLink title="Clube" path="/" />
           <NavLink title="Loja" path="/loja" />
@@ -24,6 +20,10 @@ function Header() {
           <NavLink title="Ofertas" path="#" />
           <NavLink title="Eventos" path="#" />
         </ul>
+        <IconCart>
+          <Icon />
+          <Cart />
+        </IconCart>
       </ContainerCenter>
     </Container>
   );
