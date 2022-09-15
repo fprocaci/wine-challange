@@ -12,8 +12,11 @@ import {
 } from './styles';
 import picture from '../../assets/bottle3.png';
 import ResultsReturn from '../../components/ResultsReturn/index';
+import { useState } from 'react';
 
 function HomeMain(props) {
+  const [active, setActive] = useState([]);
+
   return (
     <Container>
       <ContainerCenter>
@@ -22,21 +25,47 @@ function HomeMain(props) {
 
           <div className="inputFiltro">
             <span>Por preço</span>
+            {}
             <ol className="list">
               <li className="listFiltro">
-                <input type="radio" /> Até R$40
+                <input
+                  type="radio"
+                  checked={active === 1}
+                  onClick={() => setActive(1)}
+                />{' '}
+                Até R$40
               </li>
               <li className="listFiltro">
-                <input type="radio" /> R$40 A R$60
+                <input
+                  type="radio"
+                  checked={active === 2}
+                  onClick={() => setActive(2)}
+                />{' '}
+                R$40 A R$60
               </li>
               <li className="listFiltro">
-                <input type="radio" /> R$100 A R$200
+                <input
+                  type="radio"
+                  checked={active === 3}
+                  onClick={() => setActive(3)}
+                />{' '}
+                R$100 A R$200
               </li>
               <li className="listFiltro">
-                <input type="radio" /> R$200 A R$500
+                <input
+                  type="radio"
+                  checked={active === 4}
+                  onClick={() => setActive(4)}
+                />{' '}
+                R$200 A R$500
               </li>
               <li className="listFiltro">
-                <input type="radio" /> Acima de R$500
+                <input
+                  type="radio"
+                  checked={active === 5}
+                  onClick={() => setActive(5)}
+                />{' '}
+                Acima de R$500
               </li>
             </ol>
           </div>
