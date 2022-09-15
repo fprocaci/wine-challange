@@ -6,7 +6,7 @@ interface NavLinkProps {
 
 export const Container = styled.header`
   width: 100%;
-  height: 4rem;
+  height: 5.514rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,11 +21,14 @@ export const Container = styled.header`
 `;
 
 export const ContainerCenter = styled.div`
-  width: 66.666667%;
+  width: 66%;
   height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  ul {
+    margin-left: 83px;
+  }
 
   @media (max-width: 700px) {
     width: 95%;
@@ -35,7 +38,7 @@ export const ContainerCenter = styled.div`
 `;
 
 export const ButtonLogo = styled.div`
-  width: 50%;
+  width: 100px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -56,6 +59,10 @@ export const ButtonContainer = styled.div`
     border: none;
     scale: 1.15;
   }
+
+  @media (min-width: 1120px) {
+    display: none;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -64,12 +71,22 @@ export const LogoContainer = styled.div`
     height: 22px;
     margin-left: 27.38px;
   }
+
+  @media (min-width: 1120px) {
+    img {
+      margin-left: 0px;
+    }
+  }
 `;
 
 export const SvgContainer = styled.div`
+  height: 4rem;
+  display: flex;
+  align-items: center;
+
   svg {
-    width: 26px;
-    height: 25px;
+    width: 56px;
+    height: 59.96px;
     color: black;
     cursor: pointer;
     margin-right: 25px;
@@ -90,7 +107,7 @@ export const CartContainer = styled.div`
 export const NavLinkContainer = styled.li<NavLinkProps>`
   display: flex;
   align-items: center;
-  height: 4rem;
+  height: 5.514rem;
   border-bottom: ${props =>
     props.isActive ? '2px solid #D14B8F' : '2px solid #FFFFFF'};
   cursor: pointer;
@@ -98,12 +115,12 @@ export const NavLinkContainer = styled.li<NavLinkProps>`
     color: ${props => (props.isActive ? '#D14B8F' : '#555555')};
     transition: 0.5s;
 
-    &hover {
-      color: green;
+    &:hover {
+      color: #d14b8f;
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1120px) {
     display: none;
   }
 `;
