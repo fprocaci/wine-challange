@@ -18,6 +18,13 @@ export const Container = styled.header`
     gap: 2rem;
     align-items: center;
   }
+
+  @media (max-width: 700px) {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: none;
+  }
 `;
 
 export const ContainerCenter = styled.div`
@@ -27,7 +34,13 @@ export const ContainerCenter = styled.div`
   justify-content: center;
   align-items: center;
   ul {
-    margin-left: 83px;
+    margin-left: 5.188rem;
+  }
+
+  @media (max-width: 1200px) {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (max-width: 700px) {
@@ -65,17 +78,21 @@ export const ButtonContainer = styled.div`
   }
 `;
 
-export const LogoContainer = styled.div`
-  img {
-    width: 78px;
-    height: 22px;
-    margin-left: 27.38px;
-  }
+export const LogoContainer = styled.div``;
 
-  @media (min-width: 1120px) {
-    img {
-      margin-left: 0px;
-    }
+export const LogoDesktop = styled.a`
+  margin-left: 0;
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
+
+export const LogoMobile = styled.a`
+  display: none;
+  margin-left: 0px;
+  @media (max-width: 700px) {
+    display: block;
+    margin-left: 27.38px;
   }
 `;
 
@@ -90,6 +107,23 @@ export const SvgContainer = styled.div`
     color: black;
     cursor: pointer;
     margin-right: 25px;
+  }
+`;
+
+export const IconDesktop = styled.div`
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
+
+export const IconMobile = styled.div`
+  display: none;
+  @media (max-width: 700px) {
+    display: block;
+  }
+  svg {
+    height: 24.436113357543945px;
+    width: 25.413795471191406px;
   }
 `;
 
