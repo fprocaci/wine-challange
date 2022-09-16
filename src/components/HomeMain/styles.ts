@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin: 0 auto;
-  padding-top: 24px;
   padding-bottom: 44px;
   display: flex;
   justify-content: center;
@@ -11,6 +10,7 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1120px) {
+    padding-top: 39.77px;
   }
 `;
 
@@ -24,6 +24,7 @@ export const ContainerCenter = styled.div`
 `;
 
 export const Filtro = styled.div`
+  display: none;
   @media (min-width: 1120px) {
     width: 256px;
     display: flex;
@@ -54,7 +55,7 @@ export const Filtro = styled.div`
       margin-top: 16px;
     }
 
-    .listFiltro {
+    label {
       display: flex;
       align-items: center;
       gap: 12.15px;
@@ -63,6 +64,16 @@ export const Filtro = styled.div`
 `;
 
 export const ProductsContainer = styled.div`
+  @media (max-width: 1119px) {
+    .products {
+      padding-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 24px;
+      column-gap: 27px;
+    }
+  }
+
   @media (min-width: 1120px) {
     .products {
       display: grid;
@@ -74,7 +85,6 @@ export const ProductsContainer = styled.div`
 
 export const Card = styled.div`
   max-width: 9.5rem;
-  margin-bottom: 24px;
 
   @media (min-width: 550px) {
     max-width: 12rem;
@@ -94,12 +104,13 @@ export const CardContainer = styled.div`
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 9.73384px 14.6008px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   margin-bottom: 8px;
   padding-left: 8px;
   padding-right: 8px;
   padding-bottom: 8px;
+  cursor: pointer;
 
   img {
     position: absolute;
@@ -129,6 +140,9 @@ export const CardContainer = styled.div`
     margin-top: 12px;
   }
 
+  .wOff {
+    padding-top: 12.1px;
+  }
   .off {
     width: 66px;
     height: 16px;
@@ -182,7 +196,7 @@ export const Button = styled.button`
   height: 40px;
   color: #ffffff;
   background-color: #7ebc43;
-
+  text-transform: uppercase;
   border-radius: 4px;
   border: none;
   box-shadow: 0px 0.973384px 1.94677px rgba(0, 0, 0, 0.2);
@@ -195,6 +209,7 @@ export const ButtonList = styled.button`
   border: 2px solid #c81a78;
   border-radius: 4px;
   color: #c81a78;
+  margin-top: 32px;
 
   &:hover {
     color: #ffffff;
@@ -236,6 +251,37 @@ export const ShowList = styled.div`
 `;
 
 export const Pagination = styled.div`
+  display: none;
+  @media (min-width: 1120px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 26.64px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+
+    button {
+      border: 1px solid #b6116e;
+      padding: 10px 14px;
+      border-radius: 3px;
+      &:active {
+        background-color: #b6116e;
+      }
+    }
+
+    span {
+      color: #b6116e;
+    }
+
+    a {
+      color: #b6116e;
+    }
+  }
+`;
+
+export const PaginationContainer = styled.div`
   @media (min-width: 1120px) {
     display: flex;
     justify-content: center;
