@@ -13,9 +13,17 @@ import {
 import picture from '../../assets/bottle3.png';
 import ResultsReturn from '../../components/ResultsReturn/index';
 import { useState } from 'react';
+import Link from 'next/link';
 
 function HomeMain(props) {
-  const [active, setActive] = useState([]);
+  const [active, setActive] = useState<number>();
+  const [itensPerPage, setItensPerPage] = useState(6);
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const pages = Math.ceil(props.vinhos.length / itensPerPage);
+  const startIndex = currentPage * itensPerPage;
+  const endIndex = startIndex + itensPerPage;
+  const currentItens = props.vinhos.slice(startIndex, endIndex);
 
   return (
     <Container>
@@ -28,44 +36,59 @@ function HomeMain(props) {
             {}
             <ol className="list">
               <li className="listFiltro">
-                <input
-                  type="radio"
-                  checked={active === 1}
-                  onClick={() => setActive(1)}
-                />{' '}
-                Até R$40
+                <label htmlFor="input_1">
+                  <input
+                    id="input_1"
+                    type="radio"
+                    checked={active === 1}
+                    onChange={() => setActive(1)}
+                  />{' '}
+                  Até R$40
+                </label>
               </li>
               <li className="listFiltro">
-                <input
-                  type="radio"
-                  checked={active === 2}
-                  onClick={() => setActive(2)}
-                />{' '}
-                R$40 A R$60
+                <label htmlFor="input_2">
+                  <input
+                    id="input_2"
+                    type="radio"
+                    checked={active === 2}
+                    onChange={() => setActive(2)}
+                  />{' '}
+                  R$40 A R$60
+                </label>
               </li>
               <li className="listFiltro">
-                <input
-                  type="radio"
-                  checked={active === 3}
-                  onClick={() => setActive(3)}
-                />{' '}
-                R$100 A R$200
+                <label htmlFor="input_3">
+                  <input
+                    id="input_3"
+                    type="radio"
+                    checked={active === 3}
+                    onChange={() => setActive(3)}
+                  />{' '}
+                  R$100 A R$200
+                </label>
               </li>
               <li className="listFiltro">
-                <input
-                  type="radio"
-                  checked={active === 4}
-                  onClick={() => setActive(4)}
-                />{' '}
-                R$200 A R$500
+                <label htmlFor="input_4">
+                  <input
+                    id="input_4"
+                    type="radio"
+                    checked={active === 4}
+                    onChange={() => setActive(4)}
+                  />{' '}
+                  R$200 A R$500
+                </label>
               </li>
               <li className="listFiltro">
-                <input
-                  type="radio"
-                  checked={active === 5}
-                  onClick={() => setActive(5)}
-                />{' '}
-                Acima de R$500
+                <label htmlFor="input_5">
+                  <input
+                    id="input_5"
+                    type="radio"
+                    checked={active === 5}
+                    onChange={() => setActive(5)}
+                  />{' '}
+                  Acima de R$500
+                </label>
               </li>
             </ol>
           </div>
@@ -73,36 +96,38 @@ function HomeMain(props) {
         <ProductsContainer>
           <ResultsReturn vinhos={props.vinhos} />
           <div className="products">
-            {props.vinhos.map(vinho => {
+            {currentItens.map(vinho => {
               return (
                 <Card key={vinho.id}>
-                  <CardContainer>
-                    <img src={picture} alt="" />
-                    <h1>{vinho.name}</h1>
-                    <div className=" ">
-                      <p>
-                        R$ {vinho.price}
-                        <span className="off">15% OFF</span>
-                      </p>
-                    </div>
-                    <div className="sWineContainer">
-                      <p className="sWineText">
-                        <span className="sWine">Sócio Wine </span>
-                        <span className="socioValor">
-                          {' '}
-                          R$ {vinho.priceMember}
-                        </span>
-                      </p>
-                    </div>
-                    <div>
-                      <p>
-                        <span className="nsWine">Não Sócio </span>
-                        <span className="nsValor">
-                          R$ {vinho.priceNonMember}
-                        </span>
-                      </p>
-                    </div>
-                  </CardContainer>
+                  <Link href="/pageProducts">
+                    <CardContainer>
+                      <img src={picture} alt="Imagem do vinho" />
+                      <h1>{vinho.name}</h1>
+                      <div className="wOff">
+                        <p>
+                          R$ {vinho.price}
+                          <span className="off">15% OFF</span>
+                        </p>
+                      </div>
+                      <div className="sWineContainer">
+                        <p className="sWineText">
+                          <span className="sWine">Sócio Wine </span>
+                          <span className="socioValor">
+                            {' '}
+                            R$ {vinho.priceMember}
+                          </span>
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          <span className="nsWine">Não Sócio </span>
+                          <span className="nsValor">
+                            R$ {vinho.priceNonMember}
+                          </span>
+                        </p>
+                      </div>
+                    </CardContainer>
+                  </Link>
                   <Button>Adicionar</Button>
                 </Card>
               );
@@ -117,10 +142,16 @@ function HomeMain(props) {
             </h2>
           </ShowList>
           <Pagination>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <span>...</span>
+            {Array.from(Array(pages), (vinho, index) => {
+              return (
+                <button
+                  key={index}
+                  onClick={e => setCurrentPage(Number(e.target.value))}
+                >
+                  {index}
+                </button>
+              );
+            })}
             <a href="/">
               Próximo{' '}
               <svg
