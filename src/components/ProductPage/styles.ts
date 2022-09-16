@@ -73,7 +73,32 @@ export const ContainerMobile = styled.div`
   justify-content: center;
   align-items: center;
   padding-top: 32px;
+  .route {
+    a {
+      color: #c81a78;
+    }
+    .pais {
+      color: #c81a78;
+    }
+    .cidade {
+      color: #888888;
+    }
+    .seta {
+      color: #888888;
+    }
+  }
 
+  .productTitle {
+    padding-top: 16px;
+    h1 {
+      font-family: 'Neo Sans Std';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #111111;
+    }
+  }
   .wineImg {
     margin-top: 16px;
     img {
@@ -86,6 +111,8 @@ export const ContainerMobile = styled.div`
     width: 21.438rem;
     margin-top: 16px;
     h3 {
+      font-family: 'Neo Sans Std';
+      font-style: normal;
       font-weight: 700;
       font-size: 20px;
       line-height: 24px;
@@ -93,10 +120,12 @@ export const ContainerMobile = styled.div`
     }
 
     p {
-      color: #555555;
+      font-family: 'Lato';
+      font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
+      color: #555555;
       margin-top: 8.61px;
     }
   }
@@ -108,6 +137,8 @@ export const ContainerMobile = styled.div`
     position: sticky;
     bottom: 0;
     box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.0627185);
+    font-family: 'Lato';
+    font-style: normal;
 
     display: flex;
     justify-content: start;

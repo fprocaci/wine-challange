@@ -45,9 +45,9 @@ export function ProductPage(props) {
                 <Link href="/">
                   <a>Vinhos</a>
                 </Link>
-                {' > '}
+                <span>{' > '}</span>
                 <span>Chile</span>
-                {' > '}
+                <span>{' > '}</span>
                 <span>Vale Central</span>
               </ProductRoute>
               <h1>Nome do Vinho</h1>
@@ -74,14 +74,17 @@ export function ProductPage(props) {
           </div>
         </ContainerDesktop>
         <ContainerMobile>
-          <div className="">
+          <div className="route">
             <Link href="/">
               <a>Vinhos</a>
             </Link>
-            {' > '}
-            <span>Chile</span>
-            {' > '}
-            <span>Vale Central</span>
+            <span className="seta">{' > '}</span>
+            <span className="pais">Chile</span>
+            <span className="seta">{' > '}</span>
+            <span className="cidade">Vale Central</span>
+          </div>
+          <div className="productTitle">
+            <h1>Apothic Red 2019</h1>
           </div>
           <div className="wineImg">
             <img src={picture} alt="Imagem do vinho" />
