@@ -105,7 +105,7 @@ export const ContainerMobile = styled.div`
     width: 100%;
     height: 80px;
     background: #ffffff;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.0627185);
 

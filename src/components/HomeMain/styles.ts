@@ -131,6 +131,9 @@ export const CardContainer = styled.div`
     font-size: 10px;
     font-weight: 400;
     color: #888888;
+    .valor {
+      text-decoration: line-through;
+    }
   }
 
   span {

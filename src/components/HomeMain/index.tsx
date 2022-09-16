@@ -109,7 +109,7 @@ function HomeMain(props) {
                       <h1>{vinho.name}</h1>
                       <div className="wOff">
                         <p>
-                          R$ {vinho.price}
+                          <span className="valor">R$ {vinho.price}</span>
                           <span className="off">15% OFF</span>
                         </p>
                       </div>
