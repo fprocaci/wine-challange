@@ -97,6 +97,10 @@ function HomeMain(props) {
           <ResultsReturn vinhos={props.vinhos} />
           <div className="products">
             {currentItens.map(vinho => {
+              const priceLeft = parseInt(vinho.priceMember);
+              const priceRight = parseInt(
+                ((vinho.priceMember % 1) * 100).toString()
+              );
               return (
                 <Card key={vinho.id}>
                   <Link href="/pageProducts">
@@ -114,7 +118,8 @@ function HomeMain(props) {
                           <span className="sWine">Sócio Wine </span>
                           <span className="socioValor">
                             {' '}
-                            R$ {vinho.priceMember}
+                            R$ <span className="price">{priceLeft}</span>,
+                            {priceRight}
                           </span>
                         </p>
                       </div>
@@ -144,10 +149,7 @@ function HomeMain(props) {
           <Pagination>
             {Array.from(Array(pages), (vinho, index) => {
               return (
-                <button
-                  key={index}
-                  onClick={e => setCurrentPage(Number(e.target.value))}
-                >
+                <button key={index} onClick={() => setCurrentPage(index)}>
                   {index}
                 </button>
               );

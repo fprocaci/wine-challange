@@ -11,7 +11,6 @@ export default function Home() {
     fetch(`https://wine-back-test.herokuapp.com/products?page=1&limit=10`)
       .then(response => response.json())
       .then(data => {
-        console.log(data.items);
         setVinhos(data.items);
       });
   }, []);

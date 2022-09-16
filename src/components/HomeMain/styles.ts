@@ -186,6 +186,10 @@ export const CardContainer = styled.div`
     text-transform: uppercase;
   }
 
+  .price {
+    font-size: 20px;
+  }
+
   @media (min-width: 1120px) {
     padding-bottom: 21.49px;
   }
