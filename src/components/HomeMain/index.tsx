@@ -11,6 +11,7 @@ import {
   Pagination
 } from './styles';
 import picture from '../../assets/bottle3.png';
+import selo from '../../assets/selos.png';
 import ResultsReturn from '../../components/ResultsReturn/index';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -106,6 +107,11 @@ function HomeMain(props) {
                   <Link href="/pageProducts">
                     <CardContainer>
                       <img src={picture} alt="Imagem do vinho" />
+                      <img
+                        src={selo}
+                        className="selo"
+                        alt="selo de promoção da wine"
+                      />
                       <h1>{vinho.name}</h1>
                       <div className="wOff">
                         <p>

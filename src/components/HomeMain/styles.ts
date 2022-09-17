@@ -119,6 +119,14 @@ export const CardContainer = styled.div`
     height: 181px;
   }
 
+  .selo {
+    width: 31.2px;
+    height: 31.92px;
+    position: absolute;
+    left: 7.8px;
+    top: 164.58px;
+  }
+
   h1 {
     width: 100%;
     text-align: center;

@@ -6,7 +6,8 @@ interface NavLinkProps {
 
 export const Container = styled.header`
   width: 100%;
-  height: 5.514rem;
+  height: 4.5rem;
+  /* height: 5.514rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +25,10 @@ export const Container = styled.header`
     top: 0;
     z-index: 20;
     box-shadow: none;
+  }
+
+  @media (min-width: 701px) {
+    height: 5.514rem;
   }
 `;
 

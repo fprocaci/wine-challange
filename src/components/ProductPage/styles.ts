@@ -75,15 +75,31 @@ export const ContainerMobile = styled.div`
   padding-top: 32px;
   .route {
     a {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
       color: #c81a78;
     }
-    .pais {
+    .country {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
       color: #c81a78;
     }
-    .cidade {
+    .city {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
       color: #888888;
     }
     .seta {
+      font-size: 12px;
       color: #888888;
     }
   }
@@ -101,6 +117,7 @@ export const ContainerMobile = styled.div`
   }
   .wineImg {
     margin-top: 16px;
+    position: relative;
     img {
       height: 333px;
       width: 218px;
@@ -110,6 +127,7 @@ export const ContainerMobile = styled.div`
   .wineDescription {
     width: 21.438rem;
     margin-top: 16px;
+    padding-bottom: 10px;
     h3 {
       font-family: 'Neo Sans Std';
       font-style: normal;
@@ -127,6 +145,35 @@ export const ContainerMobile = styled.div`
       line-height: 24px;
       color: #555555;
       margin-top: 8.61px;
+    }
+  }
+
+  .wineResume {
+    display: flex;
+    align-items: center;
+    span {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #333333;
+    }
+
+    .local {
+      margin-left: 8.22px;
+    }
+    .type {
+      margin-left: 8px;
+    }
+    .type2 {
+      margin-left: 8px;
+    }
+    .amount {
+      margin-left: 8px;
+    }
+    .Weight {
+      margin-left: 8px;
     }
   }
 
