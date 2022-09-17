@@ -15,7 +15,7 @@ function Header() {
         </ButtonLogo>
         <ul>
           <NavLink title="Clube" path="/" />
-          <NavLink title="Loja" path="/loja" />
+          <NavLink title="Loja" path="#" />
           <NavLink title="Produtores" path="#" />
           <NavLink title="Ofertas" path="#" />
           <NavLink title="Eventos" path="#" />
