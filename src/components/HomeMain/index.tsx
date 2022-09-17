@@ -106,12 +106,14 @@ function HomeMain(props) {
                 <Card key={vinho.id}>
                   <Link href="/pageProducts">
                     <CardContainer>
-                      <img src={picture} alt="Imagem do vinho" />
-                      <img
-                        src={selo}
-                        className="selo"
-                        alt="selo de promoção da wine"
-                      />
+                      <div className="cardImage">
+                        <img src={picture} alt="Imagem do vinho" />
+                        <img
+                          src={selo}
+                          className="selo"
+                          alt="selo de promoção da wine"
+                        />
+                      </div>
                       <h1>{vinho.name}</h1>
                       <div className="wOff">
                         <p>

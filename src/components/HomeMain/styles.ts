@@ -96,35 +96,33 @@ export const Card = styled.div`
 `;
 
 export const CardContainer = styled.div`
-  position: relative;
   width: 100%;
   height: 348px;
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: end;
   align-items: center;
   box-shadow: 0px 9.73384px 14.6008px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   margin-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-bottom: 8px;
+  padding: 15.96px 8px 6.79px 8px;
   cursor: pointer;
-
-  img {
-    position: absolute;
-    top: 16px;
-    width: 123px;
-    height: 181px;
-  }
-
-  .selo {
-    width: 31.2px;
-    height: 31.92px;
-    position: absolute;
-    left: 7.8px;
-    top: 164.58px;
+  .cardImage {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 123px;
+      height: 181px;
+    }
+    .selo {
+      width: 31.2px;
+      height: 31.92px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
   }
 
   h1 {
@@ -133,6 +131,7 @@ export const CardContainer = styled.div`
     align-items: center;
     font-size: 14px;
     color: #111111;
+    padding-top: 11.68px;
   }
 
   p {
@@ -176,6 +175,8 @@ export const CardContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 4.56px;
+    padding-bottom: 4.56px;
   }
 
   .sWine {
@@ -195,6 +196,7 @@ export const CardContainer = styled.div`
   .nsWine {
     font-size: 10px;
     text-transform: uppercase;
+    padding-top: 4.09px;
   }
 
   .price {
@@ -203,6 +205,15 @@ export const CardContainer = styled.div`
 
   @media (min-width: 1120px) {
     padding-bottom: 21.49px;
+    .cardImage {
+      .selo {
+        width: 38.94px;
+        height: 38.94px;
+        right: 12.44px;
+        left: initial;
+        bottom: 8px;
+      }
+    }
   }
 `;
 
@@ -211,10 +222,14 @@ export const Button = styled.button`
   height: 40px;
   color: #ffffff;
   background-color: #7ebc43;
-  text-transform: uppercase;
+
   border-radius: 4px;
   border: none;
   box-shadow: 0px 0.973384px 1.94677px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: 1120px) {
+    text-transform: uppercase;
+  }
 `;
 
 export const ButtonList = styled.button`
