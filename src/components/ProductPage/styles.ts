@@ -317,7 +317,7 @@ export const ContainerMobile = styled.div`
   .wineDescription {
     width: 21.438rem;
     margin-top: 16px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     h3 {
       font-family: 'Neo Sans Std';
       font-style: normal;
