@@ -329,6 +329,12 @@ export const PaginationContainer = styled.div`
       &:active {
         background-color: #b6116e;
       }
+      &:visited {
+        background-color: #b6116e;
+      }
+      &:link {
+        background-color: #b6116e;
+      }
     }
 
     span {

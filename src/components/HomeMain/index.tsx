@@ -155,7 +155,7 @@ function HomeMain(props) {
             </h2>
           </ShowList>
           <Pagination>
-            {Array.from(Array(pages), (vinho, index) => {
+            {Array.from(Array(pages + 1), (vinho, index) => {
               return (
                 <button key={index} onClick={() => setCurrentPage(index)}>
                   {index}
