@@ -47,12 +47,42 @@ export function ProductPage(props) {
                 <Link href="/">
                   <a>Vinhos</a>
                 </Link>
-                <span>{' > '}</span>
-                <span>Estados Unidos</span>
-                <span>{' > '}</span>
-                <span>Califórnia</span>
+                <span>
+                  <svg
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M0.000290394 9.65581C0.000290394 9.56083 0.0398744 9.46654 0.117653 9.3984L5.13437 4.99966L0.117653 0.601601C-0.0267929 0.474959 -0.0399875 0.256777 0.0877914 0.11637C0.214876 -0.0261023 0.433628 -0.0398678 0.577379 0.0867742L5.88854 4.74224C6.03715 4.87301 6.03715 5.12699 5.88854 5.25707L0.577379 9.91323C0.433628 10.0399 0.214876 10.0261 0.0877914 9.88363C0.0287631 9.81824 0.000290394 9.73703 0.000290394 9.65581"
+                      fill="#B6116E"
+                    />
+                  </svg>
+                </span>
+                <span className="country">Estados Unidos</span>
+                <span>
+                  <svg
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M0.000290394 9.65581C0.000290394 9.56083 0.0398744 9.46654 0.117653 9.3984L5.13437 4.99966L0.117653 0.601601C-0.0267929 0.474959 -0.0399875 0.256777 0.0877914 0.11637C0.214876 -0.0261023 0.433628 -0.0398678 0.577379 0.0867742L5.88854 4.74224C6.03715 4.87301 6.03715 5.12699 5.88854 5.25707L0.577379 9.91323C0.433628 10.0399 0.214876 10.0261 0.0877914 9.88363C0.0287631 9.81824 0.000290394 9.73703 0.000290394 9.65581"
+                      fill="#B6116E"
+                    />
+                  </svg>
+                </span>
+                <span className="city">Califórnia</span>
               </ProductRoute>
-              <h1>Nome do Vinho</h1>
+              <h1>{'Apothic Red 2019'}</h1>
               <div className="wineResume">
                 <svg
                   width="16"

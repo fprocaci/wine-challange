@@ -27,6 +27,11 @@ export const ContainerDesktop = styled.div`
       }
     }
   }
+  @media (max-width: 1200px) {
+    .back {
+      width: 80%;
+    }
+  }
   .wineContent {
     width: 66%;
     display: flex;
@@ -65,41 +70,46 @@ export const ContainerDesktop = styled.div`
           font-family: 'Lato';
           font-style: normal;
           font-weight: 400;
-          font-size: 14px;
-          line-height: 24px;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
           margin-right: 8px;
+          white-space: nowrap;
         }
         .type {
           font-family: 'Lato';
           font-style: normal;
           font-weight: 400;
-          font-size: 14px;
-          line-height: 24px;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
           margin-right: 8px;
+          white-space: nowrap;
         }
         .type2 {
           font-family: 'Lato';
           font-style: normal;
           font-weight: 400;
-          font-size: 14px;
-          line-height: 24px;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
           margin-right: 8px;
+          white-space: nowrap;
         }
         .Weight {
           font-family: 'Lato';
           font-style: normal;
           font-weight: 400;
-          font-size: 14px;
-          line-height: 24px;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
           margin-right: 8px;
+          white-space: nowrap;
         }
         .amount {
           font-family: 'Lato';
           font-style: normal;
           font-weight: 400;
-          font-size: 14px;
-          line-height: 24px;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
           margin-right: 8px;
+          white-space: nowrap;
         }
       }
     }
@@ -254,6 +264,21 @@ export const ProductRoute = styled.div`
   margin-bottom: 16px;
   a {
     color: #c81a78;
+    margin-right: 0.5rem;
+  }
+  span {
+    svg {
+      color: #888888;
+      margin-right: 0.5rem;
+    }
+  }
+  .country {
+    color: #c81a78;
+    margin-right: 0.5rem;
+  }
+  .city {
+    color: #888888;
+    margin-right: 0.5rem;
   }
 `;
 
