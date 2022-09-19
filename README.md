@@ -14,7 +14,7 @@ Este é um modelo de configuração inicial para projetos baseados em Next Js.
 
 # Instalação
 
-Basta clonar este repositório ou usar como modelo e divirta-se!
+Basta clonar este repositório e divirta-se!
 
 # **Contatos**
 
