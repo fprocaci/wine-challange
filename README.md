@@ -2,6 +2,10 @@
 [![React.js](https://img.shields.io/badge/-ReactJs-blue)](https://pt-br.reactjs.org/)
 [![Typescript](https://img.shields.io/badge/-Typescript-blue)](https://www.typescriptlang.org/)
 
+<div>
+    <img src="../wine/src/assets/wineReadme.jpg" alt="">
+</div>
+
 <br/>
 <div align="center">
     <h1 color="#ffff" >Configuração inicial do projeto com Next Js, Typescript, ESlint, Prettier and Styled-Components</h1>
