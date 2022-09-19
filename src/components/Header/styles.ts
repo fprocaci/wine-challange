@@ -36,7 +36,7 @@ export const ContainerCenter = styled.div`
   width: 66%;
   height: 4rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   ul {
     margin-left: 5.188rem;

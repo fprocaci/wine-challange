@@ -39,7 +39,6 @@ export const ContainerDesktop = styled.div`
     .wineImg {
       width: 40.563rem;
       height: 580px;
-      /* margin-left: 129px; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -50,7 +49,7 @@ export const ContainerDesktop = styled.div`
     }
 
     .wineDescription {
-      width: 462.22px;
+      width: 28.889rem;
       margin-top: 10px;
       h1 {
         color: #111111;
@@ -60,12 +59,11 @@ export const ContainerDesktop = styled.div`
       }
       .wineResume {
         width: 100%;
+        height: 24px;
         display: flex;
         align-items: center;
         color: #555555;
-        svg {
-          margin-right: 8px;
-        }
+
         .country {
           font-family: 'Lato';
           font-style: normal;
@@ -73,6 +71,7 @@ export const ContainerDesktop = styled.div`
           font-size: 0.875rem;
           line-height: 1.5rem;
           margin-right: 8px;
+          margin-left: 8px;
           white-space: nowrap;
         }
         .type {
@@ -102,13 +101,16 @@ export const ContainerDesktop = styled.div`
           margin-right: 8px;
           white-space: nowrap;
         }
+        .stars {
+          display: flex;
+          align-items: center;
+        }
         .amount {
           font-family: 'Lato';
           font-style: normal;
           font-weight: 400;
           font-size: 0.875rem;
           line-height: 1.5rem;
-          margin-right: 8px;
           white-space: nowrap;
         }
       }
