@@ -314,6 +314,7 @@ export const Pagination = styled.div`
       border-radius: 3px;
       &:active {
         background-color: #b6116e;
+        color: #ffffff;
       }
     }
 
