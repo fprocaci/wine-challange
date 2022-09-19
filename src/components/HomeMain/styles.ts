@@ -60,6 +60,14 @@ export const Filtro = styled.div`
       flex-direction: column;
       gap: 20px;
       margin-top: 16px;
+
+      .listFiltro {
+        label {
+          input[type='radio'].inputCustom {
+            accent-color: #000000;
+          }
+        }
+      }
     }
 
     label {

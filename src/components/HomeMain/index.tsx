@@ -40,6 +40,7 @@ function HomeMain(props) {
                 <label htmlFor="input_1">
                   <input
                     id="input_1"
+                    className="inputCustom"
                     type="radio"
                     checked={active === 1}
                     onChange={() => setActive(1)}
@@ -51,6 +52,7 @@ function HomeMain(props) {
                 <label htmlFor="input_2">
                   <input
                     id="input_2"
+                    className="inputCustom"
                     type="radio"
                     checked={active === 2}
                     onChange={() => setActive(2)}
@@ -62,6 +64,7 @@ function HomeMain(props) {
                 <label htmlFor="input_3">
                   <input
                     id="input_3"
+                    className="inputCustom"
                     type="radio"
                     checked={active === 3}
                     onChange={() => setActive(3)}
@@ -73,6 +76,7 @@ function HomeMain(props) {
                 <label htmlFor="input_4">
                   <input
                     id="input_4"
+                    className="inputCustom"
                     type="radio"
                     checked={active === 4}
                     onChange={() => setActive(4)}
@@ -84,6 +88,7 @@ function HomeMain(props) {
                 <label htmlFor="input_5">
                   <input
                     id="input_5"
+                    className="inputCustom"
                     type="radio"
                     checked={active === 5}
                     onChange={() => setActive(5)}
