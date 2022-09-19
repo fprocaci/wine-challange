@@ -163,7 +163,7 @@ function HomeMain(props) {
             {Array.from(Array(pages + 1), (vinho, index) => {
               return (
                 <button key={index} onClick={() => setCurrentPage(index)}>
-                  {index}
+                  {index + 1}
                 </button>
               );
             })}
