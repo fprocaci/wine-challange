@@ -120,6 +120,7 @@ export const SvgContainer = styled.div`
 `;
 
 export const IconDesktop = styled.div`
+  display: flex;
   @media (max-width: 700px) {
     display: none;
   }
@@ -143,6 +144,7 @@ export const CartContainer = styled.div`
     color: black;
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
   }
 `;
