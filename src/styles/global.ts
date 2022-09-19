@@ -1,6 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+  @font-face {
+    font-family: 'Neo Sans Std';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/NeoSansStdMedium.otf') format('opentype');
+  }
+
   *{
     margin: 0;
     padding: 0;

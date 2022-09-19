@@ -13,7 +13,7 @@ export const ContainerDesktop = styled.div`
 
   display: none;
   .back {
-    width: 66%;
+    width: 1120px;
     padding-top: 30px;
     padding-bottom: 25px;
     .linkBack {
@@ -27,18 +27,18 @@ export const ContainerDesktop = styled.div`
       }
     }
   }
-  @media (max-width: 1200px) {
+  @media (max-width: 1120px) {
     .back {
-      width: 80%;
+      width: 95%;
     }
   }
   .wineContent {
-    width: 66%;
+    width: 1120px;
     display: flex;
 
     .wineImg {
       width: 40.563rem;
-      height: 580px;
+      height: 36.25rem;
       display: flex;
       justify-content: center;
       align-items: center;

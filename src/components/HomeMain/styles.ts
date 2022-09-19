@@ -16,7 +16,7 @@ export const Container = styled.div`
 
 export const ContainerCenter = styled.div`
   @media (min-width: 1120px) {
-    width: 66%;
+    width: 1120px;
     display: flex;
     justify-content: space-between;
     gap: 32px;
@@ -34,6 +34,13 @@ export const Filtro = styled.div`
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
+
+    h3 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+    }
 
     input {
       width: 19.86px;
@@ -76,6 +83,7 @@ export const ProductsContainer = styled.div`
 
   @media (min-width: 1120px) {
     .products {
+      width: 832px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 32px;

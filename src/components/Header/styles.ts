@@ -33,7 +33,7 @@ export const Container = styled.header`
 `;
 
 export const ContainerCenter = styled.div`
-  width: 66%;
+  width: 1120px;
   height: 4rem;
   display: flex;
   justify-content: space-between;
@@ -42,8 +42,8 @@ export const ContainerCenter = styled.div`
     margin-left: 5.188rem;
   }
 
-  @media (max-width: 1200px) {
-    width: 80%;
+  @media (max-width: 1120px) {
+    width: 95%;
     display: flex;
     justify-content: space-between;
   }
@@ -74,6 +74,7 @@ export const ButtonContainer = styled.div`
     width: 1.7rem;
     height: 1.7rem;
     background-color: #ffffff;
+    color: #000000;
     border: none;
     scale: 1.15;
   }
@@ -89,6 +90,9 @@ export const LogoDesktop = styled.a`
   margin-left: 0;
   @media (max-width: 700px) {
     display: none;
+  }
+  @media (max-width: 1120px) {
+    margin-left: 27.38px;
   }
 `;
 
