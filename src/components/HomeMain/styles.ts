@@ -18,7 +18,7 @@ export const ContainerCenter = styled.div`
   @media (min-width: 1120px) {
     width: 66%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 32px;
   }
 `;
