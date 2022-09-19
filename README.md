@@ -4,21 +4,17 @@
 
 <br/>
 <div align="center">
-    <h1 color="#ffff" >Initial project config with Next Js, Typescript, ESlint, Prettier and Styled-Components</h1>
+    <h1 color="#ffff" >Configuração inicial do projeto com Next Js, Typescript, ESlint, Prettier and Styled-Components</h1>
     </br>
 </div>
 
 # Sobre o Projeto
 
-This is a template for initial configuration for projects based in Next Js.
-
-Use and abuse!
+Este é um modelo de configuração inicial para projetos baseados em Next Js.
 
 # Instalação
 
-Just clone this repo or use as a template and enjoy!
-
-Good coding!
+Basta clonar este repositório ou usar como modelo e divirta-se!
 
 # **Contatos**
 
