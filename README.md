@@ -3,7 +3,7 @@
 [![Typescript](https://img.shields.io/badge/-Typescript-blue)](https://www.typescriptlang.org/)
 
 <div>
-    <img src="../wine/src/assets/wineReadme.jpg" alt="">
+    <img src="src/assets/wineReadme.jpg" alt="">
 </div>
 
 <br/>
